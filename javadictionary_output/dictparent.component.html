@@ -1,0 +1,17 @@
+<div>       
+       <img [src]="imagepath" width="100" height="100"/>
+<br/><br/>
+       {{word}}
+
+       Syllabus is as follows <br/>
+       <ul *ngFor="let t of lst">
+              <li>{{t}}</li>
+       </ul>
+
+       <dictchild-comp (eventObj)=onwordchange($event)></dictchild-comp>
+</div>
+
+
+
+
+
